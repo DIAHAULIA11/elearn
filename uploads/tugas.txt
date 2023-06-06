@@ -1,0 +1,116 @@
+==ALJABAR RELASIONAL==
+
+> Pengertian: operasi dasar dari model relasional yang digunakan sebagai dasar dalam melakukan pencarian data
+
+> Merupakan dasar dari SQL Query Database dalam bentuk matematis.
+
+> Operasi dasar:
+	> Select. (bentuk umum: Sigma<Kondisi Select>(R atau Tabelnya))
+	> Projection. Memilih atribut/kolom tertentu saja.
+	> Cartesian Product. Menggabungkan 2 tabel. Jumlah baris akhir = Tabel 1 X Tabel 2
+	> Union. Menggabungkan dari dua Relasi, dengan syarat Tabel 1 dan Tabel 2 mempunyai arity yang sama.
+	> SET DIFFERENCE atau MINUS.
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+==LATIHAN==
+1. sigma<(fname='Alicia' OR fname='Ramesh') AND dno='4'>EMPLOYEES
+
+2. sigma<dno='4' AND salary='25000'>EMPLOYEES
+
+3. sigma <(minit='B' OR minit='A' OR 	minit='S') AND (salary >= 35000 	AND salary <= 50000)>EMPLOYEES
+
+sigma <(minit='B' OR minit='A' OR 	minit='S') AND (salary BETWEEN 30000 AND 50000)>EMPLOYEES
+
+4. Menampilkan pegawai yang bekerja di departemen 4 dan gajinya lebih dari 40000 atau bernama JAMES
+
+5. Menampilkan atribut LNAME, FNAME, SALARY
+
+6. Menampilkan atribut LNAME, FNAME, SALARY yang DNO nya 5
+
+7. 
+FN 		LN
+SUSAN 		YAO
+SHARUKH 	KHAN
+JOHNY 		INDO
+BARBARA		JONES
+AMY		FORD
+JIMMY		HENDRIX
+BO		JOVI
+=======================
+JOHN		SMITH
+RICHARD		MARK
+FRANCIS		JOHNSON
+
+8.
+FN 		LN
+JOHNY		INDO
+BARBARA		JONES
+AMY		FORD
+JIMMY		HENDRIX
+BON		JOVI
+
+9.
+STUDENT				INSTRUKTUR		
+FN 		LN		FN 		LN
+SUSAN 		YAO		JOHN		SMITH
+SUSAN 		YAO		RICHARD		MARK
+SUSAN 		YAO		SUSAN		YAO
+SUSAN 		YAO		FRANCIS		JOHNSON
+SUSAN 		YAO		SHARUKH		KHAN
+
+SHARUKH		KHAN		JOHN		SMITH
+SHARUKH		KHAN		RICHARD		MARK
+SHARUKH		KHAN		SUSAN		YAO
+SHARUKH		KHAN		FRANCIS		JOHNSON
+SHARUKH		KHAN		SHARUKH		KHAN
+
+JOHNY		INDO		JOHN		SMITH
+JOHNY 		INDO		RICHARD		MARK
+JOHNY 		INDO		SUSAN		YAO
+JOHNY 		INDO		FRANCIS		JOHNSON
+JOHNY 		INDO		SHARUKH		KHAN
+
+BARBARA		JONES		JOHN		SMITH
+BARBARA		JONES		RICHARD		MARK
+BARBARA		JONES		SUSAN		YAO
+BARBARA		JONES		FRANCIS		JOHNSON
+BARBARA		JONES		SHARUKH		KHAN
+
+AMY		FORD		JOHN		SMITH
+AMY		FORD		RICHARD		MARK
+AMY		FORD		SUSAN		YAO
+AMY		FORD		FRANCIS		JOHNSON
+AMY		FORD		SHARUKH		KHAN
+
+JIMMY		HENDRIX		JOHN		SMITH
+JIMMY		HENDRIX		RICHARD		MARK
+JIMMY		HENDRIX		SUSAN		YAO
+JIMMY		HENDRIX		FRANCIS		JOHNSON
+JIMMY		HENDRIX		SHARUKH		KHAN
+
+BON		JOVI		JOHN		SMITH
+BON		JOVI		RICHARD		MARK
+BON		JOVI		SUSAN		YAO
+BON		JOVI		FRANCIS		JOHNSON
+BON		JOVI		SHARUKH		KHAN
+
+10. 
+LN
+INDO
+MARK
